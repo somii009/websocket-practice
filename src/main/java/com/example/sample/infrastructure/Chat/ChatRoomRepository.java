@@ -17,6 +17,7 @@ public class ChatRoomRepository {
     }
 
     public List<ChatRoomDTO> findAllRooms() {
+        // 채팅방 생성 순서 최근순으로 반환
         List<ChatRoomDTO> result = new ArrayList<>(chatRoomDTOMap.values());
         Collections.reverse(result);
 
